@@ -1,0 +1,84 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.card
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 700px;
+    background-image: url(img.jpg);
+    transform-style: preserve-3d;
+    transform: translate(-50%,-50%) perspective(2000px);
+    box-shadow: inset 500px 0 50px rgb(252, 252, 252), 0 20px 100px rgba(252, 252, 252);
+    transition: 1s;
+}
+.card:hover
+{
+    transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgb(252, 252, 252), 0 10px 100px rgba(252, 252, 252);
+}
+
+.card:before
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+ /*    background: #fff; */
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+.card:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width:5px;
+    height: 100%;
+  /*   background: #fff; */
+    transform-origin: right;
+    transform: skewY(-45deg);
+}
+.card .imgBox
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s cubic-bezier(.05,1.53,.85,.16);
+}
+.card:hover .imgBox
+{
+    transform: rotateY(-135deg);
+}
+
+.card .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -1;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
