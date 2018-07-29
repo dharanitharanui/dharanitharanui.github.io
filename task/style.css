@@ -1,0 +1,64 @@
+body{
+  background-color: #000;
+}
+.card .card-content .card-title {
+  display: block;
+  line-height: 32px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+input.btn.addTaskButton {
+  margin: 0;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 29px;
+  box-shadow: 1px 1px 3px #000;
+  position: relative;
+  left: 12px;
+}
+.clearTaskButton {
+  margin: 0;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 29px;
+  box-shadow: 1px 1px 3px #000;
+  position: relative;
+  left: 12px;
+}
+
+.tasksHead {
+  background-color: #26a69a;
+  color: #fff;
+  font-size: 19px;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 1px 1px 9px 0px #000;
+}
+ul.collection {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.card .card-content .card-title {
+  display: block;
+  line-height: 32px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background-color: #2fb7ab;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 2px #b9b1b1;
+}
+.container {
+  margin: 10% auto;
+}
+
