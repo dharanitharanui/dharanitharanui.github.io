@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #fff;
+}
+
+.main-container {
+  width: 100%;
+  background-color: #f00;
+}
+
+.leftContainer {
+  float: left;
+  width: 15%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  box-shadow: 3px 3px 13px 0px #000000;
+  z-index: 2;
+}
+
+.middleContainer {
+  float: left;
+  width: 35%;
+  background-color: #232d31;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: 15%;
+  color: #fff;
+  padding: 10px 25px;
+  box-shadow: -1px 0px 10px 0px #8a8888;
+  z-index: 1;
+}
+
+.rightContainer {
+  float: left;
+  width: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: 50%;
+  padding: 10px 25px;
+}
+
+.profilePhoto {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 30px;
+  margin-top: 35px;
+}
+
+.profilePhoto img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  left: 5%;
+}
+
+.profileName {
+  position: relative;
+  text-align: center;
+  top: 50px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.socialIcons {
+  position: absolute;
+  bottom: 5px;
+  left: 25%;
+}
+
+span.socialIconsList img {
+  width: 20px;
+  margin: 5px;
+}
+
+.menu {
+  position: relative;
+  top: 100px;
+  width: 75%;
+  margin: 0 auto;
+  right: -3px;
+  padding: 20px 0px;
+}
+
+ul.menuUl {
+  padding: 1px;
+}
+
+li.menuUlLi {
+  margin-bottom: 25px;
+  list-style: none;
+}
+
+a.menuUlLIA {
+  cursor: pointer;
+  padding: 5px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+img.menuUlLIAImg {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 22px;
+}
+
+.mainNameBLock {
+  margin-top: 50%;
+}
+
+.shimmer {
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+}
+
+.shimmer {
+  background: -webkit-gradient(linear,left top,right top,from(#e5e8f5),to(#c3e9f5),color-stop(.5,rgb(35, 45, 49)));
+  background: -moz-gradient(linear,left top,right top,from(#222),to(#222),color-stop(.5,#fff));
+  background: gradient(linear,left top,right top,from(#222),to(#222),color-stop(.5,#fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  -webkit-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #ffffff;
+}
+
+@-moz-keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+@-webkit-keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+@-o-keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+@-ms-keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+@keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+h5.hiMessage {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Alegreya Sans";
+  margin-bottom: 50px;
+}
+
+#dynamicContent {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 40px;
+  color: #bdbdbd;
+}
+
+.cardBlock {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px #bbb;
+}
+
+.card {
+  width: 45%;
+  float: left;
+  margin-left: 3%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+h5.whatIDo {
+  position: relative;
+  left: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.whatIdoBlcok {
+  position: relative;
+  margin-top: 10%;
+}
+
+img.whatIdoServicesImages {
+  width: 65px;
+  position: relative;
+  left: 40%;
+  top: 60px;
+}
+
+h5.whatIdoServicesName {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 85px;
+}
+
