@@ -1,0 +1,700 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #fff;
+}
+
+.main-container {
+  width: 100%;
+  background-color: #f00;
+}
+
+.leftContainer {
+  float: left;
+  width: 15%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-shadow: 3px 3px 13px 0px #000000;
+  z-index: 2;
+}
+
+.middleContainer {
+  float: left;
+  width: 35%;
+  background-color: #038c8a;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-left: 15%;
+  color: #fff;
+  padding: 10px 25px;
+  box-shadow: 1px 4px 10px 0px #f9f7f7;
+  z-index: 1;
+  background: linear-gradient(88deg, #168098, #00bfb2);
+}
+
+.middleContainerPortfolio {
+  float: left;
+  width: 85%;
+  background-color: #038c8a;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-left: 15%;
+  color: #fff;
+  padding: 10px 25px;
+  box-shadow: 1px 4px 10px 0px #f9f7f7;
+  z-index: 1;
+  background: linear-gradient(88deg, #168098, #00bfb2);
+}
+
+.aboutMiddleContainer {
+  position: relative;
+  top: 25%;
+}
+
+.rightContainer {
+  float: left;
+  width: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: 50%;
+  padding: 10px 25px;
+}
+
+.profilePhoto {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 30px;
+  margin-top: 35px;
+}
+
+.profilePhoto img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  left: 5%;
+}
+
+.profileName {
+  position: relative;
+  text-align: center;
+  top: 50px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.socialIcons {
+  position: absolute;
+  bottom: 5px;
+  left: 25%;
+}
+
+span.socialIconsList img {
+  width: 20px;
+  margin: 5px;
+}
+
+.menu {
+  position: relative;
+  top: 100px;
+  width: 75%;
+  margin: 0 auto;
+  right: -3px;
+  padding: 20px 0px;
+}
+
+ul.menuUl {
+  padding: 1px;
+}
+
+li.menuUlLi {
+  margin-bottom: 25px;
+  list-style: none;
+}
+
+a.menuUlLIA {
+  cursor: pointer;
+  padding: 5px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+img.menuUlLIAImg {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 22px;
+}
+
+.mainNameBLock {
+  margin-top: 50%;
+}
+
+.shimmer {
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+}
+
+.shimmer {
+  background: -webkit-gradient(linear,left top,right top,from(#e5e8f5),to(#c3e9f5),color-stop(.5,rgb(35, 45, 49)));
+  background: -moz-gradient(linear,left top,right top,from(#222),to(#222),color-stop(.5,#fff));
+  background: gradient(linear,left top,right top,from(#222),to(#222),color-stop(.5,#fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  -webkit-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #ffffff;
+}
+
+@-moz-keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+@-webkit-keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+@-o-keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+@-ms-keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+@keyframes shimmer {
+0% {
+  background-position: top left;
+}
+
+100% {
+  background-position: top right;
+}
+}
+
+h5.hiMessage {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Alegreya Sans";
+  margin-bottom: 50px;
+}
+
+#dynamicContent {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.cardBlock {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px #bbb;
+}
+
+.card {
+  width: 45%;
+  float: left;
+  margin-left: 3%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  height: 250px;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 12px 0px #dcdcdc;
+}
+
+.rightBlockHead {
+  position: relative;
+  left: 25px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 17px;
+}
+
+.rightSideMainBlcok {
+  position: relative;
+  margin-top: 10%;
+}
+
+img.whatIdoServicesImages {
+  width: 65px;
+  position: relative;
+  left: 40%;
+  top: 60px;
+}
+
+h5.whatIdoServicesName {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 85px;
+}
+
+/* About Me */
+
+p.aboutMeText {
+  padding: 0 35px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: justify;
+  position: relative;
+  top: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.subHead {
+  font-size: 15px;
+}
+
+.personalDetailsBlock {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+td.personalDetailsHead {
+  padding: 5px 20px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+td.personalDetailsValue {
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.personalDetailsBlock table tr td {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.aboutMeBlock {
+  box-shadow: 1px 1px 15px 1px #8e8e8e;
+  background-color: #fff;
+  position: relative;
+}
+
+.skillsBlock {
+  box-shadow: 1px 1px 9px 5px #bbbbbb;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.aboutImageBlock {
+  width: 100%;
+  height: 230px;
+}
+
+.skillImageBlock {
+  width: 100%;
+  height: 25px;
+  background-position: center;
+  background-color: #049e87;
+  background: linear-gradient(88deg, #1e8ea0, #00bfb2);
+}
+
+.educationBlock {
+  box-shadow: 1px 1px 9px 5px #bbbbbb;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.educationImageBlock
+{
+  width: 100%;
+  height: 35px;
+  background-position: center;
+  background-color: #049e87;
+  background: linear-gradient(88deg, #1e8ea0, #00bfb2);
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+.skillsBarBlock {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.aboutDetailsButtonsBlock {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.aboutLinks {
+  width: 45%;
+  float: left;
+  background-color: #097f808a;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 25px 25px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.aboutLinks:hover {
+  background-color: #027479;
+  font-weight: 600;
+}
+
+.educationDetails {
+  padding: 5px 25px;
+}
+
+td.educationMainHead {
+  background-color: #1996a3;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+td.educationSubHead {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+td.educationSubHeadValue {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.experienceDetails {
+  padding: 5px 35px;
+}
+
+h5.experienceDetailsHead {
+  font-weight: 600;
+}
+
+h6.experienceDetailsValue {
+  position: relative;
+  font-size: 13px;
+  left: 32px;
+  letter-spacing: 1px;
+}
+td.companyAddress {
+  width: 80%;
+}
+
+td.experienceHead {
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 10px 11px;
+  text-align: justify;
+  background-color: #079694;
+  border: 0.5px solid #fff;
+}
+
+td.experienceValue {
+  border: 0.5px solid #d3dcdc;
+  padding: 10px 10px;
+}
+
+td.experienceValue {
+  border: 0.5px solid #d3dcdc;
+  padding: 10px 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+h5.portfolioHead {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.portfolioContainer {
+  width: 100%;
+}
+
+.projectBlcok {
+  width: 24%;
+  float: left;
+  margin-left: 1%;
+  background-color: #fff;
+  margin-bottom: 1%;
+}
+
+.downloadCVBLock {
+  position: absolute;
+  bottom: 50px;
+  left: 75px;
+  background-color: #0d9aa3;
+  padding: 5px 24px 5px 25px;
+  color: #fff;
+}
+
+
+a.downloadCVa {
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+
+.hiddenBlock{
+  display: none;
+}
+
+
+.contactContainer {
+  width: 500px;
+  min-height: 340px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  transform-style: preserve-3d;
+  margin: 15% auto;
+}
+
+.side {
+position: absolute;
+text-align: center;
+width: 100%;
+height: 100%;
+padding: 20px 50px;
+color: #fff;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+border-radius: 20px;
+}
+.content {
+transform: translatez(70px) scale(0.8);
+line-height: 1.5em;
+}
+.content h1 {
+position: relative;
+}
+.content p {
+margin-top: 50px;
+line-height: 2em;
+}
+.content h1:before {
+content: "";
+position: absolute;
+bottom: -20px;
+height: 3px;
+background-color: #3e3;
+width: 70px;
+left: 50%;
+transform: translateX(-50%);
+}
+.front {
+z-index: 2;
+background-size: 100vh;
+background-size: cover;
+background-image: url(/images/contactBg.jpg);
+}
+.back {
+background-color: #333;
+transform: rotateY(180deg);
+z-index: 0;
+padding-top: 10px;
+background-image:url(/images/contactBg.jpg);
+}
+.contactContainer:hover {
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+form {
+text-align: left;
+}
+.back h1 {
+margin: 0;
+}
+form label,
+form input {
+display: block;
+}
+form input,
+form textarea {
+background: transparent;
+border: 0;
+border-bottom: 2px solid #444;
+padding: 5px;
+width: 100%;
+color: #fff;
+}
+form label {
+margin: 15px 0;
+}
+form input[type="submit"] {
+display: block;
+width: auto;
+margin: 10px auto;
+padding: 5px 10px;
+border: 3px solid #555;
+border-radius: 4px;
+color: #fff;
+cursor: pointer;
+}
+/* my button style  */
+.white-mode {
+text-decoration: none;
+padding: 7px 10px;
+background-color: #122;
+border-radius: 3px;
+color: #fff;
+transition: 0.35s ease-in-out;
+position: fixed;
+left: 15px;
+bottom: 15px;
+font-family: "Montserrat";
+}
+
+.white-mode:hover {
+background-color: #fff;
+color: #122;
+}
