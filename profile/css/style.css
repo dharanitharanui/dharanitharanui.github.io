@@ -16,7 +16,7 @@ body{
   float: left;
   width: 15%;
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   box-shadow: 3px 3px 13px 0px #000000;
@@ -26,15 +26,36 @@ body{
 .middleContainer {
   float: left;
   width: 35%;
-  background-color: #232d31;
-  position: absolute;
+  background-color: #038c8a;
+  position: fixed;
   top: 0;
   bottom: 0;
   margin-left: 15%;
   color: #fff;
   padding: 10px 25px;
-  box-shadow: -1px 0px 10px 0px #8a8888;
+  box-shadow: 1px 4px 10px 0px #f9f7f7;
   z-index: 1;
+  background: linear-gradient(88deg, #168098, #00bfb2);
+}
+
+.middleContainerPortfolio {
+  float: left;
+  width: 85%;
+  background-color: #038c8a;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-left: 15%;
+  color: #fff;
+  padding: 10px 25px;
+  box-shadow: 1px 4px 10px 0px #f9f7f7;
+  z-index: 1;
+  background: linear-gradient(88deg, #168098, #00bfb2);
+}
+
+.aboutMiddleContainer {
+  position: relative;
+  top: 25%;
 }
 
 .rightContainer {
@@ -223,7 +244,8 @@ h5.hiMessage {
   font-weight: bold;
   font-size: 17px;
   margin-top: 40px;
-  color: #bdbdbd;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .cardBlock {
@@ -243,17 +265,19 @@ h5.hiMessage {
   padding: 5px 15px;
   height: 250px;
   margin-bottom: 25px;
+  box-shadow: 0px 0px 12px 0px #dcdcdc;
 }
 
-h5.whatIDo {
+.rightBlockHead {
   position: relative;
   left: 25px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  margin-top: 17px;
 }
 
-.whatIdoBlcok {
+.rightSideMainBlcok {
   position: relative;
   margin-top: 10%;
 }
@@ -272,3 +296,289 @@ h5.whatIdoServicesName {
   margin-top: 85px;
 }
 
+/* About Me */
+
+p.aboutMeText {
+  padding: 0 35px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: justify;
+  position: relative;
+  top: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.subHead {
+  font-size: 15px;
+}
+
+.personalDetailsBlock {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+td.personalDetailsHead {
+  padding: 5px 20px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+td.personalDetailsValue {
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.personalDetailsBlock table tr td {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.aboutMeBlock {
+  box-shadow: 1px 1px 15px 1px #8e8e8e;
+  background-color: #fff;
+  position: relative;
+}
+
+.skillsBlock {
+  box-shadow: 1px 1px 9px 5px #bbbbbb;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.aboutImageBlock {
+  width: 100%;
+  height: 230px;
+}
+
+.skillImageBlock {
+  width: 100%;
+  height: 25px;
+  background-position: center;
+  background-color: #049e87;
+  background: linear-gradient(88deg, #1e8ea0, #00bfb2);
+}
+
+.educationBlock {
+  box-shadow: 1px 1px 9px 5px #bbbbbb;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.educationImageBlock
+{
+  width: 100%;
+  height: 35px;
+  background-position: center;
+  background-color: #049e87;
+  background: linear-gradient(88deg, #1e8ea0, #00bfb2);
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+.skillsBarBlock {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.aboutDetailsButtonsBlock {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.aboutLinks {
+  width: 45%;
+  float: left;
+  background-color: #097f808a;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 25px 25px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.aboutLinks:hover {
+  background-color: #027479;
+  font-weight: 600;
+}
+
+.educationDetails {
+  padding: 5px 25px;
+}
+
+td.educationMainHead {
+  background-color: #1996a3;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+td.educationSubHead {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+td.educationSubHeadValue {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.experienceDetails {
+  padding: 5px 35px;
+}
+
+h5.experienceDetailsHead {
+  font-weight: 600;
+}
+
+h6.experienceDetailsValue {
+  position: relative;
+  font-size: 13px;
+  left: 32px;
+  letter-spacing: 1px;
+}
+td.companyAddress {
+  width: 80%;
+}
+
+td.experienceHead {
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 10px 11px;
+  text-align: justify;
+  background-color: #079694;
+  border: 0.5px solid #fff;
+}
+
+td.experienceValue {
+  border: 0.5px solid #d3dcdc;
+  padding: 10px 10px;
+}
+
+td.experienceValue {
+  border: 0.5px solid #d3dcdc;
+  padding: 10px 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+h5.portfolioHead {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.portfolioContainer {
+  width: 100%;
+}
+
+.projectBlcok {
+  width: 24%;
+  float: left;
+  margin-left: 1%;
+  background-color: #fff;
+  margin-bottom: 1%;
+}
+
+.downloadCVBLock {
+  position: absolute;
+  bottom: 50px;
+  left: 75px;
+  background-color: #0d9aa3;
+  padding: 5px 24px 5px 25px;
+  color: #fff;
+}
+
+
+a.downloadCVa {
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-decoration: none;
+}

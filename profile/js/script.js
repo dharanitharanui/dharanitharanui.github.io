@@ -40,3 +40,4 @@ $.fn.typer = function(text, options){
 };
 
 $('#foo').typer(['<i>Anyone</i> <u>is</u> <b>awesome</b>!', 'Foo bar.', 1337]);
+
