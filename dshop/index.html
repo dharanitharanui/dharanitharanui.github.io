@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularModule">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/icons/cart_header.png"/>
+
+    <title>D - Shop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dshop.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/angualr/angular.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/product_controller.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">D - Shop</a>
+        
+        <div class="itemNotificationBlock">
+          <div class="cartHead">
+            <img src="images/icons/cart_header.png" id="itemNotification">
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <br>
+    <!-- Page Content -->
+    <div class="container" ng-controller="productController">
+
+      <div class="row">
+
+        
+          <div class="itemDetailsBlock">
+              <div class="">
+                <h5 class="cartItemsHead">Cart Items</h5>
+                <span class="closePopup">X</span>
+              </div>
+              <table class="table table-bordered">
+                <thead>
+                  <td>Product Name</td>
+                  <!-- <td>Product Qty</td> -->
+                  <td>Product Price</td>
+                 <!--  <td>Total</td> -->
+                </thead>
+                <tr ng-repeat="item in cart">
+                    <td>{{item.product_name}}</td>
+                    <!-- <td><input type="number" class="cartPopupQty form-control" value=5 ng-model="qtyItem" ></td> -->
+                    <td>₹{{item.product_price}}</td>
+                    <!-- <td>₹{{qtyItem * item.product_price}}</td> -->
+                    <td><button class="btn btn-danger" ng-click=removeItem($index)>x</button></td>
+                </tr>
+              </table>
+              <span class="grandTotal">Grand Total : {{getTotal()}}</span>
+            </div>
+
+        <div class="col-lg-12" >
+
+          <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 mb-2" ng-repeat="product in products">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{{product.product_image}}" alt=""></a>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="#">{{product.product_name}}</a>
+                  </h5>
+                  <h5 class="cart-price">Rs.{{product.product_price}}</h5>
+                </div>
+                <div class="card-footer">
+                   <span><img src="images/icons/cart.png" class="addToCartIcon" ng-click="addToCart($index)"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.row -->
+
+        </div>
+        <!-- /.col-lg-12 -->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+  </body>
+
+</html>

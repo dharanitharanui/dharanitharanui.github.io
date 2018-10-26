@@ -1,0 +1,157 @@
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+h5.card-title {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h5.cart-price {
+  font-size: 14px;
+  text-align: center;
+}
+p.cart-size {
+  font-size: 10px;
+  font-weight: bold;
+}
+img.addToCartIcon {
+  float: right;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+}
+
+input.p_quantity {
+  position: relative;
+  width: 60px;
+  float: left;
+  height: 25px;
+  font-size: 12px;
+  padding: 1px 5px;
+  line-height: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #d2d2d2;
+}
+
+img#itemNotification {
+  cursor: pointer;
+}
+
+sup.itemNotification {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f00;
+  padding: 2px 4px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  font-size: 10px;
+  position: relative;
+  left: 40px;
+  top: -10px;
+}
+
+.itemDetailsBlock {
+  position: absolute;
+  top: 200px;
+  right: 400px;
+  left: 400px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 2px 15px 0px #7d7d7d;
+  display: none;
+  z-index: 10;
+}
+
+
+input.cartPopupQty {
+  padding: 5px;
+  height: 25px;
+  width: 100px;
+}
+
+h5.cartItemsHead {
+  padding: 10px;
+}
+
+span.closePopup img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+span.closePopup {
+  cursor: pointer;
+}
+
+
+.card-img-top {
+  width: 35%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  position: relative;
+  left: 34%;
+  top: 7px;
+}
+
+span.closePopup {
+  position: absolute;
+  right: 13px;
+  color: #fff;
+  top: 13px;
+  font-weight: bold;
+  background-color: #ff7c7c;
+  padding: 1px 7px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+span.grandTotal.ng-binding {
+  position: relative;
+  float: right;
+  right: 20px;
+  margin-bottom: 15px;
+  background-color: #3893a7;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+button.btn.btn-danger {
+  position: relative;
+  float: right;
+  right: 75px;
+}
+
+h5.cartItemsHead {
+  background-color: #131415;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.itemDetailsBlock table thead tr td {
+  background-color: #1c1d1f;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.itemDetailsBlock table tbody tr td {
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  /* top: 5px; */
+  line-height: 35px;
+}
