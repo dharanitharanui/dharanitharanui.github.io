@@ -2100,6 +2100,7 @@ span.uiDeveloper {
   .generic-banner .banner-content p br {
     display: none;
   }
+  
 }
 
 .history-area {
@@ -2110,8 +2111,6 @@ span.uiDeveloper {
   padding: 0 0 30px 30px;
   position: relative;
   z-index: 2;
-  top: 70px;
-  left: 45px;
 }
 
 img.responsive-img.skills-images {
@@ -2178,8 +2177,6 @@ span.card-title {
 a.experience-duration {
   font-size: 11px;
   position: relative;
-  left: 50px;
-  top: 5px;
 }
 
 .card-action {
