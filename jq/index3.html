@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script src="jquery/jquery.min.js"></script>
+</head>
+<body>
+
+
+ <pre>
+ 	package com.myproject.dbutil;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBUtil 
+{
+	
+	private DBUtil() {
+		
+	}
+	
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static Connection getConnection() throws SQLException{
+		Connection c = null;
+		try {
+			Class.forName("org.postgresql.Driver");
+			
+		}catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/mydb", "postgres", "postgres");
+		return c;
+	}
+	
+	public static void close(Connection conn) {
+		try {
+			if (conn != null) {
+				conn.close();
+			}
+		} catch (SQLException ignored) {
+		}
+	}
+	
+	
+	
+	
+	
+	package com.myajax.sample;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.myproject.dbutil.DBUtil;
+
+@WebServlet("/AjaxServletSample")
+public class AjaxServletSample extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+/*
+	private final String url = "jdbc:postgresql://localhost:5432/mydb";
+    private final String user = "postgres";
+    private final String password = "postgres";
+    private Connection connection;
+    
+	public void init() {
+		try {
+			Class.forName("org.postgresql.Driver");
+			System.out.println("init()");
+			connection = DriverManager.getConnection(url, user, password);
+            System.out.println("Connected to the PostgreSQL server successfully.");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+	}*/
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		Connection conn = null;
+		try {
+			conn = DBUtil.getConnection();
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		response.setContentType("text/plain");
+		
+		System.out.println("doPost()");
+		String firstName = request.getParameter("fullName");
+		String lastName = request.getParameter("lastName");
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		
+		try {
+			Statement statement = conn.createStatement();
+			int result = statement.executeUpdate("insert into users values('"+firstName+"','"+lastName+"','"+email+"','"+password+"')");
+			PrintWriter mywrite = response.getWriter();
+			
+			if(result>0) {
+				mywrite.print("<h1>User Created</h1>");
+			}
+			else
+			{
+				mywrite.print("<h1>Error while creating the user</h1>");
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		DBUtil.close(conn);
+		
+	}
+	
+}
+	
+ </pre>
+</body>
+</html>
