@@ -19,8 +19,8 @@
         "role": "Software Engineer",
         "Organization": "Neutrinos",
         "Qualification": "BCA",
-        "College": "Sengunthar Arts and science college",
-        "School": "Govt boys higher secondaory school"
+        "College": "Sengunthar Arts and science college , Tiruchengode",
+        "School": "Govt boys higher secondaory school , Tiruchengode"
     },
     {
         "userId": "2",
@@ -33,7 +33,7 @@
         "address": [
             {
                 "birth_city": "Chennai",
-                "current_city": "Chennai",
+                "current_city": "Bangalore",
                 "state": "Tamilnadu",
                 "country": "india",
                 "pincode": "637005"
