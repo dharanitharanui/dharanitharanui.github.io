@@ -1,5 +1,5 @@
-{
-    "Dharanitharan": {
+[
+    {
         "userId": "1",
         "first_name": "Dharanitharan",
         "last_name": "Murugan",
@@ -7,8 +7,7 @@
         "password": "fb@123",
         "phonenumber": "9659459414",
         "dob": "21.06.1995",
-        "address": 
-        [
+        "address": [
             {
                 "birth_city": "Tiruchengode",
                 "current_city": "Bangalore",
@@ -23,7 +22,7 @@
         "College": "Sengunthar Arts and science college",
         "School": "Govt boys higher secondaory school"
     },
-    "Sarath": {
+    {
         "userId": "2",
         "first_name": "Sarath",
         "last_name": "Kumar",
@@ -31,8 +30,7 @@
         "password": "sarath@123",
         "phonenumber": "9867567897",
         "dob": "23.07.1996",
-        "address": 
-        [
+        "address": [
             {
                 "birth_city": "Chennai",
                 "current_city": "Chennai",
@@ -47,4 +45,4 @@
         "College": "Sathyabama college of engineering, Chennai",
         "School": "Govt boys higher secondaory school, Chennai"
     }
-}
+]
