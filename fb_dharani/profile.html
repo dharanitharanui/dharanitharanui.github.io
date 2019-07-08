@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/title.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Dharanitharan Murugan</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="home-header">
+            <span id="logo"></span>
+            <div class="input-group" id="input-group-search">
+                <input type="text" class="profileSearch" value="" aria-describedby="search-icon">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="search-icon"><i class="searchIcon"></i></span>
+                </div>
+            </div>
+            <div class="headerMenu">
+                <span class="profileImgHeader"><img src="/images/profile.jpg" width="30px" height="30px"></span>
+                <span class="profileName headerText" id="headerName"><!-- Name --></span><span class="seperator">|</span>
+                <span class="headerText">Home</span><span class="seperator">|</span>
+                <span class="headerText">Create</span><span class="seperator">|</span>
+                <span class="headerText" id="activityLogLink">Activity Log</span><span class="seperator">|</span>
+                <span class="headerText" id="logout">Logout</span>
+            </div>
+        </header>
+        <div class="profilePageBody">
+            <div class="bodyLeft">
+                <!-- Cover Block -->
+                <div class="coverBlock">
+                    <span class="coverCameraIcon"></span><span class="uploadCover">Upload cover photo</span>
+                    <div class="coverImage"></div><span id="coverName" class="coverName"><!-- Cover Name --></span>
+                    <div class="coverProfile"></div>
+                    <div class="coverMenu">
+                        <ul class="coverMenuUl">
+                            <li class="coverMenuLi" id="timeline">Timeline<i
+                                    class="fa fa-caret-down caretCoverMenu"></i></li>
+                            <li class="coverMenuLi" id="about">About</li>
+                            <li class="coverMenuLi" id="friends">Friends<small class="friendsCount">3068</small></li>
+                            <li class="coverMenuLi" id="photos">Photos</li>
+                            <li class="coverMenuLi" id="archive"><i class="fa fa-lock LockCoverMenu"></i>Archive</li>
+                            <li class="coverMenuLi" id="more">More<i class="fa fa-caret-down caretCoverMenu"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Cover Block End-->
+                <div class="postMainBlock">
+                    <div class="userDetails">
+                        <div class="userDetailsIntro">
+                            <div class="introHeader">
+                                <div class="intro">
+                                    <span class="userIcon introIconWorld"></span>
+                                    <span class="introText">Intro</span>
+                                </div>
+                                <span class="introIconEditDetails" id="nameEdit" title="Edit"></span>
+                                <h6 class="introName" id="introName">Dharanitharan Murugan</h6>
+                                <hr class="dividerBar">
+                                <div class="introDetails">
+                                    <span class="introIconEditDetails" id="detailsEdit" title="Edit"></span>
+                                    <span class="userIcon introIconWork"></span>
+                                    <span class="introTextList">
+                                      <span id="role"></span>&nbsp;at<a href="#" class="userDetailsLink" id="organization"><!-- Work --></a>
+                                    </span>
+                                </div><br>
+                                <div class="introDetails">
+                                    <span class="userIcon introIconEducation"></span>
+                                    <span class="introTextList">
+                                        Studied at<a href="#" class="userDetailsLink" id="college"><!-- College --></a>
+                                    </span>
+                                </div><br>
+                                <div class="introDetails">
+                                    <span class="userIcon introIconEducation"></span>
+                                    <span class="introTextList">
+                                        School at<a href="#" class="userDetailsLink" id="school"><!-- School --></a>
+                                    </span>
+                                </div><br>
+                                <div class="introDetails">
+                                    <span class="userIcon introIconHome"></span>
+                                    <span class="introTextList">
+                                        Lives in<a href="#" class="userDetailsLink"><span id="currentCity"><!-- current City --></span>, <span id="currentState"><!-- current State --></span>, <span id="country"><!-- Country --></span></a>
+                                    </span>
+                                </div>
+                                <div class="introDetails">
+                                    <span class="userIcon introIconLocation"></span>
+                                    <span class="introTextList">
+                                        From<a href="#" class="userDetailsLink"><span id="birthCity"><!-- birth City --></span></a>
+                                    </span>
+                                </div>
+                                <div class="introDetails">
+                                    <span class="userIcon introIconHeart"></span>
+                                    <span class="introTextList">
+                                        Single
+                                    </span>
+                                </div>
+                                <div class="introDetails">
+                                    <span class="userIcon introIconClock"></span>
+                                    <span class="introTextList">
+                                        Joined April 2012
+                                    </span>
+                                </div>
+                                <hr class="dividerBar">
+                                <div class="introStar">
+                                    <span class="introIconStar"></span>
+                                </div>
+                                <h6 class="introDesc">Showcase what's important to you by adding photos, pages, groups
+                                    and more to your featured section on your public profile.</h6>
+                            </div>
+                        </div>
+                        <!-- Details End -->
+                        <div class="userDetailsPhotos">
+                            <div class="intro">
+                                <span class="userIcon introIconPhoto"></span>
+                                <span class="introText">Photos</span>
+                            </div>
+                            <div class="photosGrid">
+                                <div class="photoGrid"><img src="images/profile.jpg" alt="" class="grisPhoto"></div>
+                                <div class="photoGrid"><img src="images/profile2.jpg" alt="" class="grisPhoto"></div>
+                                <div class="photoGrid"><img src="images/profile3.jpg" alt="" class="grisPhoto"></div>
+                                <div class="photoGrid"><img src="images/profile4.jpg" alt="" class="grisPhoto"></div>
+                                <div class="photoGrid"><img src="images/profile5.jpg" alt="" class="grisPhoto"></div>
+                                <div class="photoGrid"><img src="images/profile.jpg" alt="" class="grisPhoto"></div>
+                                <div class="photoGrid"><img src="images/profile2.jpg" alt="" class="grisPhoto"></div>
+                                <div class="photoGrid"><img src="images/profile3.jpg" alt="" class="grisPhoto"></div>
+                                <div class="photoGrid"><img src="images/profile4.jpg" alt="" class="grisPhoto"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postBlock">
+                        <div class="cretaePost">
+                            <div class="PostMenu">
+                                <span class="userIconPost introIconEdit postIcon"></span>
+                                <span class="introTextListHead">
+                                    <a href="#" class="userDetailsLink postLink">Create Post</a>
+                                </span>
+
+                                <span class="userIconPost introIconCamera postIcon"></span>
+                                <span class="introTextListHead">
+                                    <a href="#" class="userDetailsLink postLink">photo / Video</a>
+                                </span>
+
+                                <span class="userIconPost introIconVideo postIcon"></span>
+                                <span class="introTextListHead">
+                                    <a href="#" class="userDetailsLink postLink">Live video</a>
+                                </span>
+
+                                <span class="userIconPost introIconFlag postIcon"></span>
+                                <span class="introTextListHead">
+                                    <a href="#" class="userDetailsLink postLink borderNone">Live Event</a>
+                                </span>
+                            </div>
+                            <!-- Post menu end -->
+                            <div class="postInputBlock">
+                                <span class="profileImgInPost"><img src="/images/profile.jpg" width="50px"
+                                        height="50px"></span>
+                                <input type="text" name="postContent" id="postContent" class="postContent"
+                                    placeholder="What's on your mind?">
+                            </div>
+                            <!-- Post Block end -->
+                            <hr class="dividerBarPostBox">
+                            <div class="PostMenuFooter">
+
+                                <span class="userIconPostFooter introIconGallery postIcon"></span>
+                                <span class="introTextListHead">
+                                    <a href="#" class="userDetailsLink postLinkFooter">photo / Video</a>
+                                </span>
+
+                                <span class="userIconPostFooter introIconTag postIcon"></span>
+                                <span class="introTextListHead">
+                                    <a href="#" class="userDetailsLink postLinkFooter">Tag Friends</a>
+                                </span>
+
+                                <span class="userIconPostFooter introIconSmily postIcon"></span>
+                                <span class="introTextListHead">
+                                    <a href="#" class="userDetailsLink postLinkFooter">Feeling / Activ...</a>
+                                </span>
+                                <span class="introTextListHead">
+                                    <a href="#" class="userDetailsLink postLinkFooterDot" title="More">...</a>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Post End -->
+                        <div class="post">
+                            <div class="postFeedBlock">
+                                <span class="profileImgInPost"><img src="/images/profile.jpg" width="50px"
+                                        height="50px"></span>
+                                <span class="activeUserName postHeaderName" id="postHeaderName"><!-- Post header name --></span>&nbsp;
+                                <span class="actionByUser">updated his cover photo.</span><br>
+                                <span class="actionTimings">Yesterday at 5:01 PM.</span>
+                            </div>
+                            <div class="postImage">
+                                test
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post Block End -->
+                <div class="editBlock">
+                    <div class="editHeader">
+                        <span class="aboutIcon"><img src="images/about.png" alt="about" class="aboutImg"></span><span class="about">About</span>
+                    </div>
+                    <div class="detailsLeft">
+                        <h6 class="detailsHeading" id="overview">Overview</h6>
+                        <h6 class="detailsHeading" id="PersonalDetails">Personal Details</h6>
+                        <h6 class="detailsHeading" id="workAndEducation">Work and Education</h6>
+                        <h6 class="detailsHeading headingDisable">Places You've Lived</h6>
+                        <h6 class="detailsHeading headingDisable">Family and Relationship</h6>
+                        <h6 class="detailsHeading headingDisable">Details About You</h6>
+                        <h6 class="detailsHeading headingDisable">Live Events</h6>
+                    </div>
+                    <div class="detailsRight">
+                        <div class="Overview">
+                            <h6 class="editDetailsHead">Overview</h6>
+                            <hr>
+                            <div class="editDetailsHeadSub">
+                                <h6 class="editDetailsHead editDetailsHeadSubText">Personal Details</h6>
+                                <span class="editPersonalDetails" id="editPersonalDetails" title="Edit"></span>
+                                <!-- <hr> --> <br>
+                                <div class="details">
+                                    <h6 class="lable">Full Name</h6>
+                                    <span class="detailsValue">
+                                        <span id="detailsFirstName"></span>
+                                        <span id="detailsLastName"></span>
+                                    </span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">Contact No</h6>
+                                    <span class="detailsValue" id="detailsContact"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">Email</h6>
+                                    <span class="detailsValue" id="detailsEmail"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">Date of birth</h6>
+                                    <span class="detailsValue" id="detailsBirthDay"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">Birth City</h6>
+                                    <span class="detailsValue" id="detailsBirthCity"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">Current City</h6>
+                                    <span class="detailsValue" id="detailsCurrentCty"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">State</h6>
+                                    <span class="detailsValue" id="detailsState"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">Country</h6>
+                                    <span class="detailsValue" id="detailsCountry"></span>
+                                </div>
+                                <br>
+                                <!-- overview - work and Education -->
+                                <h6 class="editDetailsHead editDetailsHeadSubText">Work and Education Details</h6>
+                                <span class="editPersonalDetails" id="editEducationalDetails" title="Edit"></span>
+                                <!-- <hr> --> <br>
+                                <div class="details">
+                                    <h6 class="lable">Organization</h6>
+                                    <span class="detailsValue" id="detailsOrganization"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">Role</h6>
+                                    <span class="detailsValue" id="detailsRole"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">College</h6>
+                                    <span class="detailsValue" id="detailsCollege"></span>
+                                </div>
+                                <div class="details">
+                                    <h6 class="lable">School</h6>
+                                    <span class="detailsValue" id="detailsSchool"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Overview End -->
+
+                        <div class="personalDetailsBlock">
+                            <h6 class="editDetailsHead">Personal Details</h6>
+                            <hr>
+                            <form action="" name="" id="personalDetailsForm">
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">First Name</h6>
+                                <span class="formField">
+                                    <input type="text" name="firstName" id="firstName" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">Last Name</h6>
+                                <span class="formField">
+                                    <input type="text" name="lastName" id="lastName" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">Phone Number</h6>
+                                <span class="formField">
+                                    <input type="text" name="phoneNumber" id="phoneNumber" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">Email</h6>
+                                <span class="formField">
+                                    <input type="text" name="userDetailsEmail" id="userDetailsEmail" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">DOB</h6>
+                                <span class="formField">
+                                    <input type="text" name="userDetailsDob" id="userDetailsDob" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">Birth city</h6>
+                                <span class="formField">
+                                    <input type="text" name="userBirthCity" id="userBirthCity" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">Current city</h6>
+                                <span class="formField">
+                                    <input type="text" name="currentCity" id="userCurrentCity" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">State</h6>
+                                <span class="formField">
+                                    <input type="text" name="userState" id="userState" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">Country</h6>
+                                <span class="formField">
+                                    <input type="text" name="userCountry" id="userCountry" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledActionBlock">
+                                <span class="formField">
+                                    <input type="button" name="submitButtonPersonal" value="Save Changes" id="submitButtonPersonal" class="submitButton">
+                                    <span class="cancle">Cancel</span>
+                                </span>
+                            </div>
+                            </form>
+                        </div>
+                        <!-- Personal Details end -->
+
+                        <div class="workAndEducationDetailsBlock">
+                            <h6 class="editDetailsHead">Work and Education Details</h6>
+                            <hr>
+                            <form action="" name = "workandEducation" id="workandEducation">
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">Organization</h6>
+                                <span class="formField">
+                                    <input type="text" name="userEditOrganization" id="userEditOrganization" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">Role</h6>
+                                <span class="formField">
+                                    <input type="text" name="userEditRole" id="userEditRole" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">College</h6>
+                                <span class="formField">
+                                    <input type="text" name="userEditCollege" id="userEditCollege" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledBlock">
+                                <h6 class="formFieldHeading">School</h6>
+                                <span class="formField">
+                                    <input type="text" name="userEditSchool" id="userEditSchool" class="formFeildInput">
+                                </span>
+                            </div>
+                            <div class="formFiledActionBlock">
+                                <span class="formField">
+                                    <input type="button" name="submitButtonWorkAndEducation" value="Save Changes" id="submitButtonWorkAndEducation" class="submitButton">
+                                    <span class="cancle">Cancel</span>
+                                </span>
+                            </div>
+                            </form>
+                        </div>
+                        <!-- Work and Education details end -->
+                    </div>
+                </div>
+                <!-- About Block End -->
+                <div class="activityLogBlock" id="activityLogMainBlock">
+                    <div class="editHeader">
+                        <span class="aboutIcon"><img src="images/title.png" alt="about" class="activityLogPage"></span><span class="about">Activity Log</span>
+                    </div>
+                    <!-- Dynamic Content goes here -->
+                </div>
+                <!-- Activity Log End -->
+            </div>
+            <div class="bodyRight">
+                <div class="chatList">
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Ragavan N</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile2.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Ureshkumar S</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile3.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Sarath K</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile5.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Anil Yadav</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile4.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Gowtham D</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Asfack ahemad</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile2.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Vignesh SP</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile3.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Gireeswaran</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile5.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Pradeep K</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile4.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Sankar M</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Karthikeyan M</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile2.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Revanth R</span>
+                        <span class="status"></span>
+                    </div>
+                    <div class="chatBlock">
+                        <span class="friendsChatImage"><span class="profileImgInChat"><img src="/images/profile4.jpg"
+                                    width="50px" height="50px"></span></span>
+                        <span class="friendsChatName">Aravind N</span>
+                        <span class="status"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/script-profile.js"></script>
+</body>
+
+</html>
