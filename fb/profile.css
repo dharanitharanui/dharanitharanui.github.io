@@ -1,0 +1,916 @@
+body{
+    background-color: #e9ebee;
+}
+.home-header {
+    width: 100%;
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+    height: 43px;
+    position: fixed;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+#logo {
+    background-image: url(images/fb.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -25px -219px;
+    display: block;
+    height: 24px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    white-space: nowrap;
+    width: 24px;
+    position: relative;
+    left: 66px;
+    top: 21%;
+}
+.profilePageBody {
+    position: absolute;
+    top: 43px;
+    z-index: -1;
+}
+div#input-group-search {
+    width: 550px;
+    position: absolute;
+    top: 3px;
+    left: 97px;
+}
+.searchIcon{
+    background-image: url(images/fb.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -125px -192px;
+    cursor: pointer;
+    display: block;
+    height: 14px;
+    position: relative;
+    width: 14px;
+    z-index: 2;
+}
+input.profileSearch {
+    width: 400px;
+    height: 26px;
+    border-radius: 4px 0px 0px 4px;
+    border-right: 0;
+    top: 5px;
+    position: relative;
+    border-left: 1px solid #29487d;
+    border-top: 1px solid #29487d;
+    border-bottom: 1px solid #29487d;
+    left: -1px;
+    font-size: 14.4px;
+    padding-left: 8px;
+}
+.input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem 15px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+span#search-icon {
+    height: 26px;
+    position: relative;
+    top: 21%;
+    border-right: 1px solid #29487d;
+    border-top: 1px solid #29487d;
+    border-bottom: 1px solid #29487d;
+}
+.headerMenu {
+    width: 730px;
+    float: right;
+    position: relative;
+    bottom: 14px;
+}
+span.headerText {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    padding: 3px 10px 5px 10px;
+    position: relative;
+    bottom: 1px;
+    cursor: pointer;
+}
+
+span.headerText:hover {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 3px;
+}
+
+span.seperator {
+    color: #00000017;
+}
+
+span.profileImgHeader img {
+    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    bottom: 1px;
+    left: 9px;
+}
+
+.bodyRight {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #d0d0d0;
+    width: 205px;
+    z-index: -1;
+}
+
+.coverBlock {
+    width: 850px;
+    position: relative;
+    left: 82px;
+    height: 360px;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    border-top: 0;
+}
+
+.coverCameraIcon {
+    background-image: url(images/fb-icon.png);
+    width: 26px;
+    height: 21px;
+    background-position: 0 0;
+    position: absolute;
+    left: 25px;
+    top: 23px;
+    z-index: 1;
+}
+
+span.uploadCover {
+    position: absolute;
+    background-color: #0c0c0cbf;
+    border: 1px solid #fff;
+    border-color: rgba(255, 255, 255, .8);
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+    color: #c7c7c7;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    padding: 6px 20px 6px 35px;
+    top: 15px;
+    transition: opacity .3s cubic-bezier(.175, .885, .32, 1.275), width .3s step-end;
+    white-space: nowrap;
+    width: 169px;
+    word-wrap: normal;
+    left: 20px;
+    z-index: 0;
+    font-size: 14px;
+}
+
+.coverImage {
+    height: 315px;
+    background-image: url(images/cover.jpeg);
+    background-size: cover;
+}
+.coverProfile {
+    position: absolute;
+    width: 167px;
+    height: 167px;
+    background-image: url(images/profile.jpg);
+    background-size: cover;
+    bottom: 20px;
+    left: 16px;
+    border: 4px solid #fff;
+    border-radius: 100%;
+}
+span#coverName {
+    position: absolute;
+    bottom: 60px;
+    left: 200px;
+    color: #fff;
+    text-rendering: optimizelegibility;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .8);
+    font-size: 24px;
+    font-weight: bold;
+    width: 270px;
+    line-height: 30px;
+}
+.coverMenu {
+    background-color: #fff;
+}
+
+.PostMenu {
+    background-color: #fff;
+    background-color: #f5f6f7;
+    border-bottom: 1px solid #dddfe2;
+    border-radius: 2px 2px 0 0;
+    font-weight: bold;
+    height: 33px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    left: 336px;
+}
+
+ul.coverMenuUl {
+    position: relative;
+    left: 150px;
+    width: 700px;
+    height: 43px;
+}
+
+
+li.coverMenuLi {
+    display: inline-block;
+    padding: 4px 10px;
+    line-height: 35px;
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 1px solid #ececec;
+    font-size: 14px;
+}
+
+li.coverMenuLi:hover {
+    background: #f5f6f7;
+    text-decoration: none;
+}
+
+.friendsCount {
+    color: #89919c;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 6px;
+}
+
+.caretCoverMenu {
+    position: relative;
+    left: 6px;
+    top: 1px;
+}
+
+.LockCoverMenu {
+    margin-right: 6px;
+    font-size: 13.5px;
+}
+
+.postMainBlock {
+    width: 850px;
+    position: relative;
+    left: 82px;
+    top: 12px;
+    display: none;
+}
+
+
+.userDetails {
+    width: 322px;
+    margin-right: 13px;
+    float: left;
+}
+
+.userDetailsIntro {
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    margin-bottom: 13px;
+    padding: 12px;
+}
+a.userDetailsLink {
+    color: #385898;
+    position: relative;
+    margin-left: 4px;
+    font-size: 13px;
+}
+span.userIcon
+{
+    background-image: url(images/fb-userdetails.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.introDetails {
+    margin-bottom: -1px;
+}
+
+.introTextList {
+    font-size: 12.6px;
+    line-height: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 35px;
+    font-family: inherit;
+    width: 250px;
+}
+
+.introIconWorld {
+    width: 24px;
+    height: 24px;
+    background-position: 0 -58px;
+}
+.introIconPhoto{
+    width: 24px;
+    height: 24px;
+    background-position: 0 -33px;
+}
+.photosGrid {
+    margin-top: 5px;
+}
+.photoGrid {
+    width: 31%;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.photoGrid img {
+    width: 100%;
+    height: 91px;
+}
+
+.introIconEducation
+{
+    height: 16px;
+    width: 16px;
+    background-position: 0 -230px;
+}
+.introIconWork
+{
+    height: 16px;
+    width: 16px;
+    background-position: 0 -145px;
+}
+.introIconHome
+{
+    height: 16px;
+    width: 16px;
+    background-position: 0 -213px;
+}
+.introIconLocation
+{
+    height: 16px;
+    width: 16px;
+    background-position: 0 -247px;
+}
+.introIconHeart
+{
+    height: 16px;
+    width: 16px;
+    background-position: 0 -196px;
+}
+.introIconClock
+{
+    height: 16px;
+    width: 16px;
+    background-position: 0 -162px;
+}
+.introIconStar
+{   
+    width: 24px;
+    height: 24px;
+    background-image: url(images/fb-icon.png);
+    background-position: 0 -47px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.introIconEditDetails {
+    width: 12px;
+    height: 12px;
+    background-image: url(images/fb-icon.png);
+    background-position: 0 -1017px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 290px;
+    cursor: pointer;
+}
+/* .introIconEditDetails:hover {
+    background-color: #3b5998;
+    background-image: url(images/fb-icon2.png);
+    background-position: -187px -477px;
+    opacity: 1;
+    padding: 8px;
+} */
+
+
+.introStar {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    margin-top: -10px;
+}
+
+h6.introName {
+    font-size: 12.6px;
+    line-height: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+h6.introDesc {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    font-weight: 400;
+    width: 95%;
+    margin: 0 auto;
+}
+
+span.introText {
+    font-size: 16.8px;
+    line-height: 25px;
+    position: absolute;
+    left: 45px;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.userDetailsPhotos
+{
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    height: 350px;
+    margin-bottom: 13px;
+    padding: 12px;
+}
+
+.postBlock {
+    width: 515px;
+    float: right;
+}
+
+.cretaePost{
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    height: 155px;
+    margin-bottom: 13px;
+    padding: 12px;
+}
+.post
+{
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    height: 155px;  
+    padding: 12px;
+}
+span.userIconPost{
+    background-image: url(images/fb.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+}
+
+span.userIconPost.introIconEdit.postIcon {
+    background-position: -17px -787px;
+}
+span.userIconPost.introIconCamera.postIcon {
+    background-image: url(images/fb-icon2.png);
+    background-position: -34px -464px;
+}
+span.userIconPost.introIconVideo.postIcon {
+    background-image: url(images/fb-icon2.png);
+    background-position: -162px -443px;
+}
+span.userIconPost.introIconFlag.postIcon {
+    background-image: url(images/fb-icon2.png);
+    background-position: -68px -464px;
+}
+
+a.userDetailsLink.postLink {
+    position: relative;
+    top: 6px;
+    text-decoration: none;
+    color: #385898;
+    font-weight: 600;
+    border-right: 1px solid #bfc0c1;
+    padding-right: 10px;
+    line-height: 20px;
+}
+a.userDetailsLink.postLink.borderNone {
+    border: none;
+}
+span.introTextListHead {
+    font-size: 12.6px;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+    left: 12px;
+    font-family: inherit;
+    width: 250px;
+    bottom: 3px;
+}
+.postInputBlock {
+    position: relative;
+    top: 30px;
+    height: 65px;
+}
+span.profileImgInPost img {
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+hr.dividerBarPostBox {
+    position: relative;
+    top: 15px;
+}   
+input#postContent {
+    position: relative;
+    width: 85%;
+    left: 10px;
+    height: 55px;
+    top: 1px;
+    border: none;
+    padding: 5px;
+}
+
+
+input#postContent:focus {
+    outline: none;
+}
+
+.PostMenuFooter {
+    position: relative;
+    top: 5px;
+}
+
+span.userIconPostFooter {
+    background-image: url(images/fb-icon-post.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+span.userIconPostFooter.introIconGallery.postIcon {
+    background-position: 0 -837px;
+}
+span.userIconPostFooter.introIconTag.postIcon {
+    background-position: 0 -543px;
+}
+span.userIconPostFooter.introIconSmily.postIcon {
+    background-position: 0 -501px;
+}
+a.userDetailsLink.postLinkFooter {
+    position: relative;
+    top: 5px;
+    text-decoration: none;
+    color: #385898;
+    font-weight: 600;
+    padding: 7px 10px 8px 10px;
+    line-height: 20px;
+    background: #f5f6f7;
+    border-radius: 18px;
+}
+
+a.userDetailsLink.postLinkFooterDot {
+    position: relative;
+    top: 5px;
+    text-decoration: none;
+    color: #385898;
+    font-weight: 600;
+    padding: 7px 20px;
+    line-height: 20px;
+    background: #f5f6f7;
+    border-radius: 18px;
+}
+.chatBlock {
+    margin-bottom: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.chatBlock:hover {
+    background-color: #dddfe2;
+    box-shadow: 1px 0 0 #eaebed inset;
+    text-decoration: none;
+}
+.chatList {
+    position: relative;
+    top: 55px;
+}
+span.profileImgInChat img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
+span.friendsChatName {
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+span.status {
+    background: rgb(66, 183, 42);
+    border-radius: 50%;
+    display: inline-block;
+    height: 6px;
+    margin-left: 4px;
+    width: 6px;
+    position: relative;
+    top: 15px;
+    right: 5px;
+    float: right;
+}
+span.activeUserName {
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    top: -6px;
+    left: 5px;
+}
+span.actionTimings {
+    position: relative;
+    top: -23px;
+    font-size: 12px;
+    left: 50px;
+}
+
+span.actionByUser {
+    position: relative;
+    top: -6px;
+    color: #616770;
+    font-size: 14.5px;
+}
+
+.postImage {
+    height: 300px;
+    background-color: #000;
+    position: absolute;
+    left: 336px;
+    right: 1px;
+    background-image: url(/images/cover.jpeg);
+    background-size: cover;
+}
+
+.editBlock {
+    background-color: #fff;
+    width: 850px;
+    height: 600px;
+    position: relative;
+    left: 82px;
+    top: 12px;
+    border: 1px solid #d3d6db;
+    margin-bottom: 15px;
+    display: none;
+}   
+
+.editHeader {
+    height: 60px;
+    background-color: #fff;
+    background: #f5f6f7;
+    border-bottom: 1px solid #d3d6db;
+    border-radius: 2px 2px 0 0;
+    padding-top: 16px;
+}
+
+span.aboutIcon {
+    margin-left: 15px;
+}
+
+span.about {
+    color: #4b4f56;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 20px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+.detailsLeft {
+    width: 240px;
+    height: 540px;
+    float: left;
+    border-right: 1px solid #d3d6db;
+}
+
+h6.detailsHeading {
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    padding: 3px 10px;
+    color: #90949c;
+    margin-bottom: 18px;
+    left: 0px;
+    cursor: pointer;
+}
+
+h6.headingDisable {
+    cursor: no-drop;
+}
+
+h6.detailsHeading.activeDetails {
+    border-left: 3px solid #3b5998;
+    color: #000;
+}
+
+.detailsRight {
+    float: right;
+    width: 608px;
+    position: relative;
+    right: 0px;
+    top: 15px;
+}
+
+h6.editDetailsHead {
+    position: relative;
+    left: 10px;
+}
+
+.formFiledBlock {
+    margin-bottom: 10px;
+}
+
+h6.formFieldHeading {
+    width: 180px;
+    float: left;
+    position: relative;
+    left: 25px;
+    top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #606770;
+    line-height: 20px;
+}
+input.formFeildInput {
+    border: 1px solid #dddfe2;
+    color: #8e8e8e;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 27px;
+    line-height: 16px;
+    padding: 0 8px;
+    vertical-align: middle;
+    width: 40%;
+}
+.formFiledActionBlock {
+    float: right;
+    position: relative;
+    right: 185px;
+}
+
+input.submitButton {
+    border: none;
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
+    line-height: 26px;
+    padding: .5px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+span.cancle {
+    border: none;
+    line-height: 26px;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    top: 1px;
+    background-color: #f5f6f7;
+    border: 1px solid #cfd0d2;
+    color: #4b4f56;
+    cursor: pointer;
+}
+.Overview {
+    display: none;
+}
+.personalDetailsBlock {
+    display: none;
+}
+.workAndEducationDetailsBlock
+{
+    display: none;
+}
+.editDetailsHeadSub {
+    width: 90%;
+    margin: 0 auto;
+}
+h6.editDetailsHead.editDetailsHeadSubText {
+    position: relative;
+    left: 0;
+    margin: 0px 0 -10px 0;
+    font-size: 13px;
+}
+h6.lable {
+    font-size: 12px;
+    color: #4267b2;
+    width: 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+span.detailsValue {
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+}
+
+.editPersonalDetails {
+    width: 12px;
+    height: 12px;
+    background-image: url(images/fb-icon.png);
+    background-position: 0 -1017px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    cursor: pointer;
+}
+
+.activityLogBlock {
+    background-color: #fff;
+    width: 850px;
+    position: relative;
+    left: 82px;
+    top: 12px;
+    border: 1px solid #d3d6db;
+    margin-bottom: 15px;
+    display: none;
+}   
+
+img.activityLogPage {
+    width: 21px;
+    border-radius: 3px;
+    position: relative;
+    top: 1px;
+}
+
+
+.timeLineContent {
+    padding: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+img.timeLineImageSrc {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 1px;
+    border-radius: 50px;
+}
+
+span.timeLineName {
+    color: #4267b2;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    top: 3px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+span.timeLineActivity {
+    position: relative;
+    top: 3px;
+    margin-left: 3px;
+}
+img.timeLineImageSrcTime {
+    width: 15px;
+    position: relative;
+    margin-left: 5px;
+    top: 2px;
+}
+span.timeLineActivityTime {
+    position: relative;
+    top: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+

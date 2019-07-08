@@ -1,0 +1,48 @@
+[
+    {
+        "userId": "1",
+        "first_name": "Dharanitharan",
+        "last_name": "Murugan",
+        "email": "dharani.neutrinos@gmail.com",
+        "password": "fb@123",
+        "phonenumber": "9659459414",
+        "dob": "21.06.1995",
+        "address": [
+            {
+                "birth_city": "Tiruchengode",
+                "current_city": "Bangalore",
+                "state": "Tamilnadu",
+                "country": "india",
+                "pincode": "637001"
+            }
+        ],
+        "role": "Software Engineer",
+        "Organization": "Neutrinos",
+        "Qualification": "BCA",
+        "College": "Sengunthar Arts and science college",
+        "School": "Govt boys higher secondaory school"
+    },
+    {
+        "userId": "2",
+        "first_name": "Sarath",
+        "last_name": "Kumar",
+        "email": "sarath@gmail.com",
+        "password": "sarath@123",
+        "phonenumber": "9867567897",
+        "dob": "23.07.1996",
+        "address": [
+            {
+                "birth_city": "Chennai",
+                "current_city": "Chennai",
+                "state": "Tamilnadu",
+                "country": "india",
+                "pincode": "637005"
+            }
+        ],
+        "role": "Software Trainee",
+        "Organization": "Neutrinos",
+        "Qualification": "ECE",
+        "College": "Sathyabama college of engineering, Chennai",
+        "School": "Govt boys higher secondaory school, Chennai"
+    }
+]
