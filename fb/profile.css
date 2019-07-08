@@ -672,7 +672,7 @@ span.actionByUser {
     position: absolute;
     left: 336px;
     right: 1px;
-    background-image: url(/images/cover.jpeg);
+    background-image: url(images/cover.jpeg);
     background-size: cover;
 }
 
